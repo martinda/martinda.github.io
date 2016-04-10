@@ -22,3 +22,6 @@ And a link to [code](https://gist.github.com/martinda/ab1c3a2445bb202356d6)
 
 And embeded code:
 <script src="https://gist.github.com/martinda/ab1c3a2445bb202356d6.js"></script>
+
+Embeded code with syntax highlight:
+<script src="https://gist.github.com/martinda/59ed5f0b2e89e802c410.js"></script>
