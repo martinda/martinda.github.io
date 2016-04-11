@@ -18,6 +18,7 @@ outputfile.txt:
 ```
 
 Execution:
+
 ```
 $ make
 echo "content" >outputfile.txt
@@ -41,6 +42,7 @@ task outputFile() {
 ```
 
 Execution:
+
 ```
 $ gradle --daemon outputFile
 :outputFile
