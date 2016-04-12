@@ -4,3 +4,11 @@ _site/
 # Vim
 Session.vim
 *.swp
+
+# Make
+outputfile*
+outputdir*
+
+# Gradle
+build/
+.gradle/

@@ -1,19 +1,16 @@
 ---
 layout: post
-title: "Gradle and GNU Make Compared"
+title: "Gradle and GNU Make: No-prerequisite, build files into a directory"
 date: 2016-04-10
 ---
 
-# Gradle and GNU Make compared
-
-I'd like to compare Gradle to GNU Make.
-
-## No-prerequisite, build a single file
+## No-prerequisite, build files into a directory
 
 GNU Make:
 
 ```cmake
-outputfile.txt:
+outputdir/outputfile1.txt outputdir/outputfile2.txt:
+	mkdir $(@D)
         echo "content" >$@
 ```
 
@@ -77,6 +74,17 @@ Change file content in directory. Does gradle empty the dir when it determines i
 ## Single directory pre-requisite
 
 ## Single file pre-requisite
+
+## Performance comparison
+
+There are always two runs: initial and incremental.  For Gradle, I
+decided to start the daemon before running the initial run.
+
+| Metric                      | Gnu Make | Gradle | Comment |
+|-----------------------------|---------:|-------:|---------|
+| No prerequisite initial     |    0.021 |  0.965 | Who cares, I type slower than this anyway |
+| No prerequisite incremental |    0.003 |  0.916 | ditto |
+
 
 Here is an svg file, shold be below this line:
 

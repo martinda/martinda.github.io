@@ -1,0 +1,2 @@
+outputfile.txt:
+	echo "content" >$@
