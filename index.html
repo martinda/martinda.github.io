@@ -3,18 +3,11 @@ layout: default
 title: Martin d'Anjou
 ---
 <div id="home">
-  <h1>Blog Posts</h1>
+  <h1>Notebooks</h1>
+  Some note books I keep on-line.
   <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-
-  <h1>Notes</h1>
-  <ul class="posts">
-    {% for post in site.notes %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
+      <li><span>Gradle Notebook</span> &raquo; <a href="gradle-notebook">Gradle Notebook</a></li>
+      <li><span>GNU Make Notebook</span> &raquo; <a href="gnumake-notebook">GNU Make Notebook</a></li>
   </ul>
 
 </div>
