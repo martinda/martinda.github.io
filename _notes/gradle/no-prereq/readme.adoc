@@ -1,0 +1,19 @@
+= Plain task
+
+Source code:
+
+[source,groovy,linenums]
+----
+task myTask() {
+    doLast {
+        println("Done")
+    }
+}
+----
+
+More tasks:
+
+[source,groovy,linenums]
+----
+include::demo.gradle[tags=demo]
+----
