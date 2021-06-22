@@ -1,8 +1,0 @@
-name: Martin d'Anjou
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
-encoding: UTF-8
-collections:
-  notes:
-    path: gradle
-    output: true

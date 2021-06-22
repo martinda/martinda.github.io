@@ -1,14 +1,5 @@
-# Jekyll
-_site/
-
-# Vim
-Session.vim
-*.swp
-
-# Make
-outputfile*
-outputdir*
-
-# Gradle
-build/
-.gradle/
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor

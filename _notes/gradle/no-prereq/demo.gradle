@@ -1,7 +1,0 @@
-# tag::demo[]
-task demo() {
-    doLast {
-        println("Done")
-    }
-}
-# tag::demo[]
